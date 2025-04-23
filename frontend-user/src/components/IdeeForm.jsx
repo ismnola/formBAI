@@ -12,7 +12,7 @@ function IdeeForm() {
     event.preventDefault(); // Empêche le rechargement de la page
 
     try {
-      const response = await fetch('http://localhost:3000/ajouter-idee', {
+      const response = await fetch('https://express-bai.vercel.app/ajouter-idee', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
