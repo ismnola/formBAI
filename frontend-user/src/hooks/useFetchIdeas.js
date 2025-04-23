@@ -7,7 +7,7 @@ export const useFetchIdeas = () => {
   const fetchData = async () => {
     setLoading(true); // Active le chargement pendant la récupération
     try {
-      const response = await fetch('http://localhost:3000/idees');
+      const response = await fetch('https://express-bai.vercel.app/ajouter-idee');
       const data = await response.json();
       setIdeas(data);
     } catch (error) {
