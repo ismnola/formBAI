@@ -12,7 +12,7 @@ function IdeeForm() {
     event.preventDefault(); // Empêche le rechargement de la page
 
     try {
-      const response = await fetch('https://express-bai.vercel.app/ajouter-idee', {
+      const response = await fetch('https://expressbai-production.up.railway.app/ajouter-idee', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
